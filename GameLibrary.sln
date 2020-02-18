@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameLibrary", "GameLibrary\GameLibrary.csproj", "{887E785D-A575-4ABC-8395-BE6CADDE1452}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GameLibrarySetup", "RadioSetup\RadioSetup.vdproj", "{ABEE8908-CAE7-406C-9CED-EFCA896E18B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{887E785D-A575-4ABC-8395-BE6CADDE1452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887E785D-A575-4ABC-8395-BE6CADDE1452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887E785D-A575-4ABC-8395-BE6CADDE1452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887E785D-A575-4ABC-8395-BE6CADDE1452}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABEE8908-CAE7-406C-9CED-EFCA896E18B1}.Debug|Any CPU.ActiveCfg = Debug
+		{ABEE8908-CAE7-406C-9CED-EFCA896E18B1}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FAF65D3D-8EAC-434D-BD7C-4CA552E58327}
+	EndGlobalSection
+EndGlobal

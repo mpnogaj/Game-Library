@@ -1,0 +1,29 @@
+﻿<Window x:Class="GameLibrary.Windows.Edit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameLibrary.Windows"
+        mc:Ignorable="d"
+        Title="Edit" Height="230" Width="235" MinHeight="230" MinWidth="235" MaxHeight="230" MaxWidth="235" Icon="icon.ico"
+        >
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="New Name" VerticalAlignment="Top"/>
+        <TextBox x:Name="gameNewName" HorizontalAlignment="Left" Height="23" Margin="10,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="178"/>
+        <RadioButton x:Name="steamRadio" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Checked="steamRadio_Checked">Steam</RadioButton>
+        <TextBlock HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" Text="Game platform" VerticalAlignment="Top"/>
+        <RadioButton x:Name="classicRadio" Content="Classic" HorizontalAlignment="Left" Margin="67,80,0,0" VerticalAlignment="Top" Checked="classicRadio_Checked"/>
+        <Grid x:Name="classicGrid" HorizontalAlignment="Left" Height="60" Margin="10,100,0,0" VerticalAlignment="Top" Width="201" Visibility="Visible">
+            <TextBlock HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" Text="Path to exe" VerticalAlignment="Top"/>
+            <TextBox x:Name="gameNewPath" HorizontalAlignment="Left" Height="38" Margin="0,20,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="174" HorizontalScrollBarVisibility="Visible"/>
+            <Button x:Name="pickFile" Content="..." HorizontalAlignment="Left" Margin="181,30,0,0" VerticalAlignment="Top" Width="20" Height="20" FontFamily="Global User Interface" FontSize="15" Click="pickFile_Click"/>
+        </Grid>
+        <Grid x:Name="steamGrid" HorizontalAlignment="Left" Height="45" Margin="10,100,0,0" VerticalAlignment="Top" Width="178" Visibility="Collapsed">
+            <TextBlock HorizontalAlignment="Left" Margin="0,0,0,0" TextWrapping="Wrap" Text="Steam AppID" VerticalAlignment="Top"/>
+            <TextBox x:Name="gameNewAppID" HorizontalAlignment="Left" Height="23" Margin="0,20,0,0" TextWrapping="NoWrap" Text="" VerticalAlignment="Top" Width="174"/>
+        </Grid>
+        <Button x:Name="editBtn" Click="editBtn_Click" Content="Edit" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="cancelBtn" Click="cancelBtn_Click" Content="Cancel" HorizontalAlignment="Left" Margin="113,165,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
