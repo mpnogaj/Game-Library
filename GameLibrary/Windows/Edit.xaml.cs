@@ -1,25 +1,23 @@
-﻿using System;
-using System.Windows;
-using Microsoft.Win32;
+﻿using System.Windows;
 using GameLibrary.Games;
+using Microsoft.Win32;
 
 namespace GameLibrary.Windows
 {
     /// <summary>
     /// Interaction logic for Edit.xaml
     /// </summary>
-    public partial class Edit : Window
+    public partial class Edit
     {
-        private MainWindow mw;
-        private int index;
+        private readonly MainWindow _mw;
+        private readonly int _index;
         public Edit(ref MainWindow mainWindow, Game game, int indexToSwap)
         {
             InitializeComponent();
-            mw = mainWindow;
-            index = indexToSwap;
-            if(game is SteamGame)
+            _mw = mainWindow;
+            _index = indexToSwap;
+            if(game is SteamGame sg)
             {
-                SteamGame sg = (SteamGame)game;
                 steamRadio.IsChecked = true;
                 gameNewAppID.Text = sg.appId;
                 gameNewName.Text = sg.tittle;
@@ -35,10 +33,11 @@ namespace GameLibrary.Windows
 
         private void pickFile_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "Executeable file(.exe) | *.exe";
-            openFile.Title = "Pick your game's .exe file";
-            Nullable<bool> result = openFile.ShowDialog();
+            OpenFileDialog openFile = new OpenFileDialog
+            {
+                Filter = "Executeable file(.exe) | *.exe", Title = "Pick your game's .exe file"
+            };
+            bool? result = openFile.ShowDialog();
             if (result == true)
             {
                 gameNewPath.Text = openFile.FileName;
@@ -59,24 +58,24 @@ namespace GameLibrary.Windows
 
         private void editBtn_Click(object sender, RoutedEventArgs e)
         {
-            Nullable<bool> steamChecked = steamRadio.IsChecked;
-            bool newBool = steamChecked.HasValue ? steamChecked.Value : false;
+            bool? steamChecked = steamRadio.IsChecked;
+            bool newBool = steamChecked.HasValue && steamChecked.Value;
             if (newBool)
             {
-                SteamGame sg = new SteamGame(new string[] { gameNewName.Text, gameNewAppID.Text });
-                mw.SwapGameInList(sg, index);
+                SteamGame sg = new SteamGame(new[] { gameNewName.Text, gameNewAppID.Text });
+                _mw.SwapGameInList(sg, _index);
             }
             else
             {
-                NonSteam ns = new NonSteam(new string[] { gameNewName.Text, gameNewPath.Text });
-                mw.SwapGameInList(ns, index);
+                NonSteam ns = new NonSteam(new[] { gameNewName.Text, gameNewPath.Text });
+                _mw.SwapGameInList(ns, _index);
             }
-            this.Close();
+            Close();
         }
 
         private void cancelBtn_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Close();
         }
     }
 }

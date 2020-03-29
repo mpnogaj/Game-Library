@@ -15,62 +15,14 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_16C077631C144A52B9C029F40DF9E9FE"
+        "MsmKey" = "8:_9AC8921E3BCA4141BFF21E0BF29A9D13"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_388074022DAA414637F587F4446A2957"
-        "OwnerKey" = "8:_9738213CC83B39F89764250BDA3DE149"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_388074022DAA414637F587F4446A2957"
-        "OwnerKey" = "8:_A5B3DAFAAD094E3AB58BA5D4FDEA582C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_9738213CC83B39F89764250BDA3DE149"
-        "OwnerKey" = "8:_A5B3DAFAAD094E3AB58BA5D4FDEA582C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_A5B3DAFAAD094E3AB58BA5D4FDEA582C"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F83ECD8D19764FF57E668F625800046E"
-        "OwnerKey" = "8:_A5B3DAFAAD094E3AB58BA5D4FDEA582C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A5B3DAFAAD094E3AB58BA5D4FDEA582C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9738213CC83B39F89764250BDA3DE149"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_388074022DAA414637F587F4446A2957"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F83ECD8D19764FF57E668F625800046E"
+        "OwnerKey" = "8:_9AC8921E3BCA4141BFF21E0BF29A9D13"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -168,119 +120,6 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_16C077631C144A52B9C029F40DF9E9FE"
-            {
-            "SourcePath" = "8:..\\GameLibrary\\icon.ico"
-            "TargetName" = "8:icon.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_F74F4845E459469381205809AD6B63F4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:TRUE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_388074022DAA414637F587F4446A2957"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:XAMLMarkupExtensions, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_388074022DAA414637F587F4446A2957"
-                    {
-                    "Name" = "8:XAMLMarkupExtensions.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:XAMLMarkupExtensions.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_F74F4845E459469381205809AD6B63F4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9738213CC83B39F89764250BDA3DE149"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:WPFLocalizeExtension, Version=3.3.1.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_9738213CC83B39F89764250BDA3DE149"
-                    {
-                    "Name" = "8:WPFLocalizeExtension.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:WPFLocalizeExtension.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_F74F4845E459469381205809AD6B63F4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F83ECD8D19764FF57E668F625800046E"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-                "ScatterAssemblies"
-                {
-                    "_F83ECD8D19764FF57E668F625800046E"
-                    {
-                    "Name" = "8:System.Net.Http.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:System.Net.Http.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_F74F4845E459469381205809AD6B63F4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
         }
         "FileType"
         {
@@ -348,15 +187,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Game Library"
-        "ProductCode" = "8:{2851B7CD-9AAF-4A23-97EA-7163D7CBBAF0}"
-        "PackageCode" = "8:{4BCB0A48-A06E-4160-86C5-34BE07E52162}"
-        "UpgradeCode" = "8:{5D7E4D9A-71A7-48F4-9678-96A5D5549BF3}"
+        "ProductCode" = "8:{8A963AA1-BC87-4C64-BD91-99A6ABC87195}"
+        "PackageCode" = "8:{70917998-161B-449E-8490-4D1A19E86EA4}"
+        "UpgradeCode" = "8:{C6EABD93-A519-4B32-8AC5-00842AB7A597}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.1"
         "Manufacturer" = "8:Disco Karton"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -366,7 +205,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:Small program to organise your games"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:_16C077631C144A52B9C029F40DF9E9FE"
+        "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -469,7 +308,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_2BED1D113CC54BA8B6153D11854B9BA4"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_4E1CCA7D0CA94C4ABE63E2F6D623C3DC"
             {
             "Name" = "8:Game Library"
             "Arguments" = "8:"
@@ -477,24 +316,24 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_A5B3DAFAAD094E3AB58BA5D4FDEA582C"
-            "Folder" = "8:_CB4EBA47EB8D4689A365B050F218E4A9"
-            "WorkingFolder" = "8:_F74F4845E459469381205809AD6B63F4"
-            "Icon" = "8:_16C077631C144A52B9C029F40DF9E9FE"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_87EC548562404609B3DBAB5A16537A38"
-            {
-            "Name" = "8:Game Library"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_A5B3DAFAAD094E3AB58BA5D4FDEA582C"
+            "Target" = "8:_9AC8921E3BCA4141BFF21E0BF29A9D13"
             "Folder" = "8:_DEFE35F624A642E1B6E6CAF93EFC4F03"
             "WorkingFolder" = "8:_F74F4845E459469381205809AD6B63F4"
-            "Icon" = "8:_16C077631C144A52B9C029F40DF9E9FE"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E2F973D6262240FAA5C52F3E37DA1A82"
+            {
+            "Name" = "8:Game Library"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_9AC8921E3BCA4141BFF21E0BF29A9D13"
+            "Folder" = "8:_CB4EBA47EB8D4689A365B050F218E4A9"
+            "WorkingFolder" = "8:_F74F4845E459469381205809AD6B63F4"
+            "Icon" = "8:"
             "Feature" = "8:"
             }
         }
@@ -896,7 +735,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_A5B3DAFAAD094E3AB58BA5D4FDEA582C"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_9AC8921E3BCA4141BFF21E0BF29A9D13"
             {
             "SourcePath" = "8:..\\GameLibrary\\obj\\Release\\GameLibrary.exe"
             "TargetName" = "8:"

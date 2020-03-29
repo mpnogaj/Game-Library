@@ -9,22 +9,22 @@
         <Grid.ContextMenu>
             <ContextMenu>
                 <ContextMenu.Items>
-                    <MenuItem x:Name="launchBtn" Click="launchButton_Click" IsEnabled="False">
+                    <MenuItem x:Name="LaunchBtn" Click="launchButton_Click" IsEnabled="False">
                         <MenuItem.Header>
                             Launch game
                         </MenuItem.Header>
                     </MenuItem>
-                    <MenuItem x:Name="addBtn" Click="addClassicGame_click" IsEnabled="True">
+                    <MenuItem x:Name="AddBtn" Click="addClassicGame_click" IsEnabled="True">
                         <MenuItem.Header>
                             Add game
                         </MenuItem.Header>
                     </MenuItem>
-                    <MenuItem x:Name="editBtn" Click="editGame_click" IsEnabled="False">
+                    <MenuItem x:Name="EditBtn" Click="editGame_click" IsEnabled="False">
                         <MenuItem.Header>
                             Edit game
                         </MenuItem.Header>
                     </MenuItem>
-                    <MenuItem x:Name="deleteBtn" Click="deleteGame_click" IsEnabled="False">
+                    <MenuItem x:Name="DeleteBtn" Click="deleteGame_click" IsEnabled="False">
                         <MenuItem.Header>
                             Delete game
                         </MenuItem.Header>
@@ -32,6 +32,6 @@
                 </ContextMenu.Items>
             </ContextMenu>
         </Grid.ContextMenu>
-        <ListView x:Name="gamesList" MouseDoubleClick="launchButton_Click" SelectionChanged="gamesList_SelectionChanged"/>
+        <ListView x:Name="GamesList" MouseDoubleClick="launchButton_Click" SelectionChanged="gamesList_SelectionChanged"/>
     </Grid>
 </Window>

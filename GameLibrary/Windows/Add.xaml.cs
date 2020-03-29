@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
-using Microsoft.Win32;
 using GameLibrary.Games;
+using Microsoft.Win32;
 
 namespace GameLibrary.Windows
 {
@@ -10,20 +10,21 @@ namespace GameLibrary.Windows
     /// </summary>
     public partial class Add : Window
     {
-        private MainWindow mw;
+        private readonly MainWindow _mw;
         public Add(ref MainWindow mainWindow)
         {
             InitializeComponent();
             steamRadio.IsChecked = true;
-            mw = mainWindow;
+            _mw = mainWindow;
         }
 
         private void pickFile_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "Executeable file(.exe) | *.exe";
-            openFile.Title = "Pick your game's .exe file";
-            Nullable<bool> result = openFile.ShowDialog();
+            OpenFileDialog openFile = new OpenFileDialog
+            {
+                Filter = "Executeable file(.exe) | *.exe", Title = "Pick your game's .exe file"
+            };
+            bool? result = openFile.ShowDialog();
             if (result == true)
             {
                 gamePath.Text = openFile.FileName;
@@ -38,8 +39,8 @@ namespace GameLibrary.Windows
                 return;
             }
             Game game;
-            Nullable<bool> steamChecked = steamRadio.IsChecked;
-            bool newBool = steamChecked.HasValue ? steamChecked.Value : false;
+            bool? steamChecked = steamRadio.IsChecked;
+            bool newBool = steamChecked.HasValue && steamChecked.Value;
             if (newBool)
             {
                 if (String.IsNullOrEmpty(gameAppID.Text))
@@ -47,7 +48,7 @@ namespace GameLibrary.Windows
                     MessageBox.Show("The Steam AppID cannot be empty!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
-                game = new SteamGame(new string[] { gameName.Text, gameAppID.Text });
+                game = new SteamGame(new[] { gameName.Text, gameAppID.Text });
             }
             else
             {
@@ -56,10 +57,10 @@ namespace GameLibrary.Windows
                     MessageBox.Show("Path to the .exe file cannot be empty!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
-                game = new NonSteam(new string[] { gameName.Text, gamePath.Text });
+                game = new NonSteam(new[] { gameName.Text, gamePath.Text });
             }
-            mw.addNewGame(game);
-            this.Close();
+            _mw.AddNewGame(game);
+            Close();
         }
 
         private void classicRadio_Checked(object sender, RoutedEventArgs e)
@@ -76,7 +77,7 @@ namespace GameLibrary.Windows
 
         private void cancelBtn_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Close();
         }
     }
 }

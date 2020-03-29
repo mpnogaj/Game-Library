@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GameLibrary.Games
+﻿namespace GameLibrary.Games
 {
     
     class NonSteam : Game
@@ -13,8 +7,8 @@ namespace GameLibrary.Games
 
         public NonSteam(string[] data)
         {
-            this.tittle = data[0];
-            this.pathToEXE = data[1];
+            tittle = data[0];
+            pathToEXE = data[1];
         }
     }
 }

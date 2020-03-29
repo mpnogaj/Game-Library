@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace GameLibrary.Games
+﻿namespace GameLibrary.Games
 {
     public class Game
     {
